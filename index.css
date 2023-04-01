@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.game-container {
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    border: 5px solid #ffffff;
+    position: relative;
+}
+
+.pacman {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFF00;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    animation: move-pacman 0.3s infinite;
+}
+
+@keyframes move-pacman {
+    0% {
+        transform: rotate(45deg) translateX(0);
+    }
+
+    50% {
+        transform: rotate(45deg) translateX(100px);
+    }
+
+    100% {
+        transform: rotate(45deg) translateX(0);
+    }
+}
+
+.ghost {
+    width: 50px;
+    height: 50px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    animation: move-ghost 1s infinite;
+}
+
+@keyframes move-ghost {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.food {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.food:nth-child(2) {
+    top: 150px;
+    left: 200px;
+}
+
+.food:nth-child(3) {
+    top: 250px;
+    left: 300px;
+}
+
+.food:nth-child(4) {
+    top: 100px;
+    left: 400px;
+}
+
+.food:nth-child(5) {
+    top: 150px;
+    left: 500px;
+}
+
+.food:nth-child(6) {
+    top: 250px;
+    left: 100px;
+}
+
+.food:nth-child(7) {
+    top: 100px;
+    left: 200px;
+}
+
+.food:nth-child(8) {
+    top: 250px;
+    left: 400px;
+}
+
+.food:nth-child(9) {
+    top: 150px;
+    left: 500px;
+}
+
+.food:nth-child(10) {
+    top: 250px;
+    left: 200px;
+}
